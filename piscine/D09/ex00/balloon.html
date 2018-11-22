@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>Balloon</title>
+    <style>
+        .balloon {background-color: red; width: 200px; height: 200px; border-radius: 50%;}
+    </style>
+</head>
+<body>
+    
+    <div class="balloon" id="balloon">
+    </div>
+</body>
+
+<script>
+        var balloon = document.getElementById("balloon");
+        var colors = ['red', 'green', 'blue'];
+        var c = 0;
+
+        balloon.onclick = function ()
+        {
+            c++;
+            changeColor(c);
+            if (balloon.offsetWidth < 420 || balloon.offsetHeight < 420)
+                inflate(10)
+            else
+                restart();
+        }
+
+        balloon.addEventListener("mouseout", function()
+        {
+            c--;
+            if (c < 0)
+                c = 2;
+            changeColor(c);
+            if (balloon.offsetWidth <= 200 || balloon.offsetHeight <= 200)
+                restart();
+            else
+                inflate(-5);
+        });
+
+        function inflate(nb)
+        {
+            balloon.style.width = balloon.offsetWidth + nb;
+            balloon.style.height = balloon.offsetHeight + nb;
+        }
+
+        function restart()
+        {
+            balloon.style.width = 200;
+            balloon.style.height = 200;
+        }
+
+        function changeColor(c)
+        {
+            balloon.style.backgroundColor = colors[c % 3];
+        }
+    
+    </script>
+</html>

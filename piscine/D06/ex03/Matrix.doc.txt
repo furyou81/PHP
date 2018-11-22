@@ -1,0 +1,14 @@
+
+<- Matrix ----------------------------------------------------------------------
+The Matrix class handles matrix.
+
+An instance can be contructed from a preset which determine the type of matrix to be constructed:
+
+public function mult(Matrix $rhs)
+return a new matrix resulting of the multiplyication of the current matrix by $rhs
+
+public function transformVertex(Vertex $vtx)
+return a new vertex ($vtx on which has been applied the current matrix)
+
+Any other use is undefined behaviour.
+---------------------------------------------------------------------- Matrix ->

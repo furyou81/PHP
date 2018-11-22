@@ -1,0 +1,39 @@
+.shadow {background-color: rgb(144,144,144);
+    border-radius: 10px;
+    box-shadow: 0.5vw 0.5vw 0.5vw black;}
+
+body {background-color: rgb(80,80,80); width : 75%; margin-left: auto;
+    margin-right: auto;}
+
+header {position: relative;}
+
+#dof42_img {width: 30%; margin-left: 1%; padding-top: 0.5%; padding-bottom: 1.5%;}
+#reload_img {width: 1.5%; position: absolute; top: 8%; right: 0.5%;}
+#close_img {width: 1.5%; position: absolute; bottom: 8%; right: 0.5%;}
+#loupe_img {width: 18%; position: absolute; top: 12%; right: 2%;}
+
+#centre {width: 100%; margin-top: 1%; white-space: nowrap;}
+
+nav {width: 10%; height: 23.5vw;display: inline-block; vertical-align: top; margin-left: 2%; margin-right: 2%; padding-bottom: 3%;}
+ul {padding-left: 0; padding-top: 2.5%; padding-bottom: 2.5%;}
+ul > li{list-style-type: none; margin-top:5%; margin-bottom: 5%;}
+.nav_img {width: 50%; display: block; margin-left: auto; margin-right: auto; }
+#oeil_img {border: 0.3vw solid red; border-radius:5px;}
+#brick {background-image: url('resources/brick.jpg');  height:3.8vw; background-repeat : repeat ; margin-left: 7%; margin-right: 7%;}
+
+main {display: inline-block; width: 70%; vertical-align: top; padding: 0.7%;}
+#cluster_img {width: 100%;}
+
+section {width: 27%; height: 8vw; background-color: rgb(139,252,141); padding-top: 1%; padding-bottom: 1%; padding-left: 0.5%; padding-right: 0.5%; border-radius: 10px;
+    box-shadow: 0.5vw 0.5vw 0.5vw black; position:absolute; margin-top: -5%; margin-left: -2%; white-space: nowrap;}
+p {margin-top: 0; font-size: 0.9vw; font-family: Arial, Helvetica, sans-serif; width: 95%;}
+#enter {font-size: 1.8vw; font-family: georgia, serif;}
+#ord {text-shadow: 0.3vw 0.3vw 0.2vw red;}
+#bjr {font-style: italic;}
+form {margin-top: -3%;}
+#in {width: 75%; height: 1vw;}
+#ok {width: 17%; padding: 0.8%; margin-left:1%; font-size: 0.7vw; border-radius: 3px; background-color: rgb(240,240,240); border: 1px solid rgb(180,180,180);}
+#ikea {position: absolute; top: 27vw; left: 41vw; width:7vw; height: 11vw;}
+#apple {position: absolute; top: 26vw; left: 65vw; width:10vw; height: 8vw; transform: rotate(7deg);}
+
+

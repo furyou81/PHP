@@ -1,0 +1,197 @@
+body {background-color: #fff; color: #183152; width: 100%; }
+header {background-color: #375D81; color: #fff; width: 100%; height: 6em; position: relative;}
+#logo42 {width : 7em; margin-left: 1%;}
+#panier_box {width: 40%; background-color: #375D81; height: 6em; position: absolute; top: 0; right: 0;}
+#panier_img {width: 60%; position: absolute; top:25%; right: 25%;}
+#connexion {position: absolute; bottom: 4%; left: 1%;}
+
+h1 {font-size: 2vw;}
+#nv_compte {width: 60%; margin-top: 2%; background-color: #C4D7ED; border-radius: 15px; margin-left: auto; margin-right: auto; padding: 1vw;}
+
+nav li {
+    list-style-type: none;
+    
+}
+
+nav > ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul > li{
+    float: left;
+    position: relative;
+}
+
+.sub_menu_nav {
+    display: none;
+    width: 100%;
+    background-color: #375D81;
+}
+
+.sub_menu_nav li:hover{
+    background-color: #ABC8E2;
+}
+
+.sub_menu_nav li:hover a{
+    color: rgb(68,68,68);
+    font-weight: bold;
+    padding-left: 3em;   
+}
+nav {
+    width: 100%;
+    background-color: #375D81;
+    font-family: Tahoma, Geneva, 'Lucida Sans Unicode', 'Lucida Grande', 'Arial Black', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    position: relative;
+}
+
+nav > ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav > ul > li{
+    padding: 20px 30px 20px 30px;
+    color: #FFF;
+    width: 15%;
+}
+
+nav > ul > li:hover{
+    padding: 15px 30px 20px 30px;;
+}
+
+nav li:hover .sub_menu_nav{
+    display: inline-block;
+    position: absolute;
+    top: 100%; /*pour se positionner sous le menu*/
+    left: 0px;
+    padding: 0px;
+    z-index: 999999;
+}
+
+.sub_menu_nav li{
+    border-bottom: 1px solid #CCC;
+}
+
+.sub_menu_nav li a{
+    padding: 15px 30px;
+    color: #EEE;
+}
+
+.menu_nav{
+    height: 1em;
+    width: 10%;
+    /*border-right: solid white 1px;*/
+}
+
+.menu_nav:hover{
+    background-color: #183152;
+    border-top: 5px solid #ABC8E2;
+}
+
+.pan {
+    width: 100%;
+    height: 3.5em;
+    background-color: #4CAF50;
+    border: none;
+}
+
+.dropdown {
+    min-width: 4em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding-left: 2%;
+    text-decoration: none;
+    display: block;
+}
+
+.article_panier {
+    color: black;
+    padding-left: 2%;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.article_panier:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #8BBB8D;
+}
+
+#passer_commande {
+    width: 90%;
+    height: 3.5em;
+    margin: 5%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+main {background-color: #E1E6FA; width:60%; margin-left: auto; margin-right: auto;}
+footer {background-color: #375D81; color: #fff; width: 100%; height: 6em;}
+#copyright {position: absolute; right: 1em;}
+#left_section {background-color: #fff; width: 18%; position: absolute; top: 10.2em; border: solid rgb(200,200,200) 1px;}
+
+.article { width:28%; height:15em;background-color: #C4D7ED; display: inline-block; vertical-align: top; margin-left:2.3%; margin-top: 1em; margin-bottom: 1em; padding: 1%}
+.article_img {width: 90%; max-height: 10em; display: block; margin-left: auto; margin-right: auto ;border-radius: 50%;}
+.article_img:hover {border-radius: 0;}
+
+.form_lab {
+        display: block;
+        width: 170px;
+        float: left;
+    }
+.qty_lab {
+    display: block; float: left; width: 70px;
+}
+
+.qty_lab_descr {
+    display: inline-block;  width: 100px;
+}
+.qty_select {font-size: 1em; }
+.btn_qty { font-size: 2em;}
+.btn_select {width:20%;  font-size: 1em;}
+    hr {width: 98%;}
+
+    .cat_acceuil {margin-left: 3%;}
+
+    .nom_art {display: none;}
+
+    .description_produit {width: 80%; margin-left: auto; margin-top: 0; margin-right: auto; text-align: left; padding-bottom: 5%;}
+    .nom_produit {font-size: 2em;}
+    .prod_descr {padding-top: 2%; text-align: center;}
+    .descr_img {width: 80%;}
+    #form_descr {width: 60%; margin-left: auto; margin-right: auto; font-size: 1.5em; vertical-align: middle;}
+
+    .error_mess {color: red;}

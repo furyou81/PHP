@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Calc</title>
+        <style>
+            
+        </style>
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+    </head>
+    <body>
+            <input type="text" name="gauche" id="gauche" value=""/>
+            <select name="op" id="op">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="%">%</option>
+            </select>
+            <input type="text" name="droite" id="droite" value=""/>
+           <input id="bt" type="submit" name="submit" value="Try me!"/>
+        
+    </body>
+    
+    <script>
+        setInterval(function(){
+                console.log("Please, use me...");
+                alert("Please, use me...");
+            }, 30000);
+        $("#bt").on("click", function()
+         {
+             var g = $("#gauche").val();
+             var o = $("#op").val();
+             var d = $("#droite").val();
+            if (parseInt(g) < 0 || parseInt(d) < 0 || !Number.isInteger(parseInt(g)) || !Number.isInteger(parseInt(d)))
+            {
+                console.log("Error:(");
+                alert("Error:(");
+            }
+            else
+            {
+                switch(o)
+                {
+                    case "+":
+                        console.log(parseInt(g) + parseInt(d));
+                        alert(parseInt(g) + parseInt(d));
+                        break ;
+                    case "-":
+                        console.log(parseInt(g) - parseInt(d));
+                        alert(parseInt(g) - parseInt(d));
+                        break ;
+                    case "*":
+                        console.log(parseInt(g) * parseInt(d));
+                        alert(parseInt(g) * parseInt(d));
+                        break ;
+                    case "/":
+                        if (parseInt(d) == 0)
+                            divmod0();
+                        else
+                        {
+                            console.log(parseInt(g) / parseInt(d));
+                            alert(parseInt(g) / parseInt(d));
+                        }
+                        break ;
+                    case "%":
+                        if (parseInt(d) == 0)
+                            divmod0();
+                        else
+                        {
+                            console.log(parseInt(g) % parseInt(d));
+                            alert(parseInt(g) % parseInt(d));
+                        }
+                        break ;
+                }
+            }});
+            function divmod0()
+            {
+                    console.log("It\'s over 9000!");
+                    alert("It\'s over 9000!");
+            }
+        
+    </script>
+    </html>

@@ -1,0 +1,12 @@
+
+<- Vertex ----------------------------------------------------------------------
+The Vertex class handles vertex.
+
+An instance can be contructed from xyz coord:
+new Vertex( array( 'x' => 1.0, 'y' => 1.0, 'z' => 1.0 ) );
+new Vertex( array( 'x' => 1.0, 'y' => 1.0, 'z' => 1.0 , 'w' => 1.0 , 'color' => $color) );
+new Vertex( array( 'x' => 1.0, 'y' => 1.0, 'z' => 1.0 ) );
+w is optional and set to 1.0 by default
+color is optional and set 255, 255, 255 by default
+Any other use is undefined behaviour.
+---------------------------------------------------------------------- Vertex ->
